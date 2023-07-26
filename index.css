@@ -1,0 +1,210 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.heading{
+    display: inline-block;
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;
+    font-family: "poppins",sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+.container{
+    background-color: orange;
+    min-width: 90%;
+    
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+    
+    gap:40px;
+    border-radius: 20px;
+
+    
+}
+.container form.todo-input{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 90%;
+     min-width: 50%;
+     
+    
+    background-color: black;
+    height: 80px;
+    display: flex;
+    
+    align-items: center;
+    gap:10px;
+    border-radius: 20px;
+   
+
+
+}
+.container form.todo-input .input-text{
+    height: 40px;
+    margin-left: 30px;
+    border: none;
+    width: 80%;
+    min-width: 30%;
+    border-radius: 10px;
+    text-align: center;
+    font-family: "poppins",serif;
+    font-weight: 500;
+    font-size:20px;
+    
+
+}
+.container form.todo-input .input-text:focus{
+    outline: none;
+   
+ font-family: "poppins",serif;
+    font-weight: 500;
+    font-size:20px;
+}
+.container form.todo-input .input-buttons{
+    
+    display: flex;
+    align-items: center;
+    gap:2%;
+    
+    height: 100%;
+    min-width: 5%;
+}
+.container form.todo-input .input-buttons button{
+    padding:15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+.container form.todo-input .input-buttons button[type="submit"]{
+    background-color: greenyellow;
+    border: none;
+} 
+.container form.todo-input .input-buttons button[type="reset"]{
+    background-color: red;
+    border: none;
+}
+.container .todo-container{
+    min-height: 400px;
+    background-color: black;
+    width: 90%;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+    
+
+}
+.container .todo-container .todo-item{
+
+    background-color: white;
+    margin-top: 10px;margin-bottom: 10px;
+    width: 90%;;
+    display: flex;
+    
+    align-items: center;
+    height: 60px;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+
+}
+
+.container .todo-container .todo-item .todo-name{
+    font-family: "poppins",sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    margin-left: 20px;
+    width: 80%;
+    min-width: 60%;
+    border-radius: 20px;
+    padding:5px 10px;
+    transition: all 0.5s ease;
+}
+.container .todo-container .todo-item .todo-control{
+    height: 100%;
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    
+    
+    gap:2%;
+
+}
+.container .todo-container .todo-item .todo-control button{
+    padding:10px 14px;
+    border-radius:10px;
+    cursor: pointer;
+    border: none;
+}
+.container .todo-container .todo-item .todo-control button.delete-button{
+    background-color: orangered;
+    
+}
+.container .todo-container .todo-item .todo-control button.done-button{
+    background-color: greenyellow;
+    
+}
+.checked {
+    text-decoration: line-through;
+    
+    background-color:rgba(128, 128, 128, 0.168);
+    color:rgba(0, 0, 0, 0.298); 
+    opacity: 0.5;  
+   
+}
+.fall{
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+
+}
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline:none;
+    border: none;
+    color:rgba(0, 0, 0, 0.707);
+    width: 20rem;
+    font-family: "poppins",sans-serif;
+    cursor:pointer;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 0.8rem;
+    
+
+
+    
+     
+}
+.select{
+    margin:1rem;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 40px;
+    
+
+}
+.select::after{
+    content:"\25BC";
+    position: absolute;
+    background-color: black;
+    color:orange;
+    top: 0;right: 0;
+    display: block;
+    height: 100%;
+    padding:0.8rem;
+    pointer-events: none;
+
+}
+

@@ -207,4 +207,6 @@ select{
     pointer-events: none;
 
 }
+i,svg{
+pointer-events:none;}
 

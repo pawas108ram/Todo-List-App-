@@ -74,7 +74,7 @@ const filter=function(e){
             case "completed":
                 if(item.classList.contains('completed')){
                    
-                    item.style.diplay="flex";
+                    item.style.display="flex";
                 }
                 else{
                     item.style.display="none";

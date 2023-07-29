@@ -80,12 +80,12 @@ const filter=function(e){
                     item.style.display="none";
                 }
                 break;
-            case 'uncompleted':
-                if(!item.classList.contains('completed')){
-                    item.style.display="flex";
+            case "uncompleted":
+                if(item.classList.contains('completed')){
+                    item.style.display="none";
                 }
                 else{
-                    item.style.display="none";
+                    item.style.display="flex";
                 }
                 break;
 
